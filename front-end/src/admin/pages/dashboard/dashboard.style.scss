@@ -1,0 +1,70 @@
+.dashboard-page {
+    .welcome {
+        background: #242424;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        span {
+            background: linear-gradient(90.61deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            font-family: Darker Grotesque;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            padding: 20px 0 20px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+        }
+    }
+
+    .stats-table {
+        padding: 24px 40px;
+        background: #242424;
+        border-radius: 10px;
+    
+        h2 {
+            font-family: Darker Grotesque;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            background: linear-gradient(90.61deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            margin-bottom: 32px;
+        }
+    
+        table {
+            tbody tr {
+                height: 100%;
+                border: double 1px transparent;
+                border-radius: 10px;
+                background-image: linear-gradient(#242424, #242424), radial-gradient(circle at top left, #B38728,#FBF5B7, #BF953F, #FCF6BA, #BF953F);
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                display: inline-block;
+            }
+    
+            th {
+                font-family: Darker Grotesque;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                color: #C9C9C9;
+                margin-bottom: 8px;
+            }
+    
+            td {
+                font-family: Darker Grotesque;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: #C9C9C9;
+            }
+        }
+    }
+}
+
+

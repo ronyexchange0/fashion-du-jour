@@ -1,0 +1,138 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.categories {
+    position: relative;
+
+    .categories-inner {
+        @media (max-width: $screen-sm) {
+            justify-content: center;
+        }
+
+        .separator {
+            width: 600px;
+            height: 3px;
+            background-color: $main-color;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
+            border-radius: 10px;
+            @media (max-width: $screen-md) {
+                display: none;
+            }
+    
+            @media (min-width: $screen-md) and (max-width: $screen-xl) {
+                width: 400px;
+            }
+        }
+    
+        .pics {
+            margin-bottom: -60px;
+            @media (max-width: $screen-sm) {
+                display: none;
+            }
+    
+            .image-grid-cat {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                
+                .img1 {
+                    align-self: center;
+                    img {
+                        box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            
+                .img2 {
+                    transform: translateY(-120px);
+                    @media (min-width: $screen-sm) and (max-width: $screen-lg) {
+                        transform: translateY(-80px);
+                    }
+                    img {
+                        box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            
+                .img3 {
+                    align-self: center;
+                    transform: translate(-70px, -10px);
+                    @media (min-width: $screen-sm) and (max-width: $screen-md) {
+                        transform: translate(-50px, -60px);
+                    }
+                    img {
+                        box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+        
+        .content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (max-width: $screen-sm) {
+                flex-direction: row;
+                align-items: center;
+            }
+            @media (max-width: 444px) {
+                flex-direction: column;
+            }
+    
+            h2 {
+                margin-bottom: 60px;
+                @media (max-width: $screen-sm) {
+                    padding-right: 30px;
+                    margin-bottom: 40px;
+                }
+
+                @media (min-width: $screen-sm) and (max-width: $screen-md) {
+                    margin-bottom: 40px;
+                }
+                @media (max-width: 444px) {
+                    padding-right: 0;
+                }
+            }
+    
+            .cats {
+                @media (max-width: $screen-sm) {
+                    padding-left: 30px;
+                }
+                @media (max-width: 444px) {
+                    padding-left: 0;
+                }
+                h3 a {
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    letter-spacing: 0.195em;
+                    color: $secondary-color;
+                    margin-bottom: 40px;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    @media (max-width: $screen-md) {
+                        font-size: 20px;
+                    }
+                }
+    
+                h3:last-child a {
+                    margin-bottom: 0
+                }
+            }
+        }
+    }
+}

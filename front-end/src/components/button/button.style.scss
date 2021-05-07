@@ -1,0 +1,35 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.custom-button {
+    background-color: $main-color;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: $white-color;
+    padding: 10px 32px;
+    display: inline-block;
+    border: none;
+    @media (max-width: $screen-md) {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    &.isDisabled {
+        opacity: .5;
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}

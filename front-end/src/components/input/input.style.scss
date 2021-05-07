@@ -1,0 +1,24 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+input {
+    border: none;
+    background-color: $main-opacity-color;
+    padding: 16px;
+    width: auto;
+    max-height: 45px;
+    outline: none;
+    
+    &::placeholder {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        color: $main-color;
+    }
+}

@@ -1,0 +1,22 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(180.12deg, #393258 -83.88%, rgba(51, 50, 88, 0) 136.27%);
+$white-color: #ffffff;
+$black-color: #000000;
+ 
+.feeds {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    .feeds-inner {
+        padding: 0 52px;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    
+}

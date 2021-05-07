@@ -1,0 +1,32 @@
+.nav-side {
+    width: 25%;
+    background: #242424;
+    position: relative;
+
+    .admin-navbar {
+        position: fixed;
+        width: 25%;
+    
+        li:first-child {
+            margin: 28px 0 48px;
+        }
+    
+        li:not(:first-child) a {
+            display: flex;
+            align-items: center;
+    
+            span {
+                font-family: Darker Grotesque;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                background: linear-gradient(90.61deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+                -webkit-text-fill-color: transparent !important;
+                -webkit-background-clip: text !important;
+                margin-left: 12px;
+                text-transform: uppercase;
+            }
+        } 
+            
+    }
+}

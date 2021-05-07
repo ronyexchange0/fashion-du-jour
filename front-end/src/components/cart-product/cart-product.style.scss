@@ -1,0 +1,143 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.checkout-product {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    border-bottom: 1px solid $black-color;
+    @media (max-width: $screen-md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .product-image .image {
+        padding-top: 62%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (max-width: $screen-md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .options {
+        h3 {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 0.195em;
+            color: $secondary-color;
+            margin-bottom: 40px;
+            @media (max-width: $screen-md) {
+                margin-bottom: 28px;
+            }
+        }
+
+        .color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: block;
+            @media (max-width: $screen-md) {
+                margin-bottom: 10px;
+            }
+        }
+        
+        .blue {
+            background-color: #0500FF
+        }
+
+        .red {
+           background-color: #FF0000
+        }
+
+       .green {
+            background-color: #24FF00
+       }
+
+        .black {
+            background-color: #000
+        }
+
+        .white {
+                background-color: #fff
+        }
+
+        .gray {
+            background-color: #A9A9A9
+        }
+
+        .yellow {
+                background-color: #FFC700
+        }
+
+        .size {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            letter-spacing: 0.195em;
+            color: $secondary-color;
+            @media (max-width: $screen-md) {
+                margin-bottom: 28px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .quantity {
+        display: flex;
+        align-items: center;
+        @media (max-width: $screen-md) {
+            margin-bottom: 10px;
+        }
+
+        img {
+            cursor: pointer;
+            @media (max-width: $screen-md) {
+                width: 12px;
+            }
+        }
+
+        span {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 0.195em;
+            color: $secondary-color;
+            margin-right: 32px;
+            margin-left: 32px;
+            @media (max-width: $screen-md) {
+                margin-right: 16px;
+                margin-left: 16px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .price {
+        span {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 0.195em;
+            color: $secondary-color;
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+
+.stats-box {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #242424;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
+    .stats {
+        span {
+            display: inline-block;
+            margin-bottom: 12px;
+            font-family: Darker Grotesque;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 60px;
+            background:  linear-gradient(90.61deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+        }
+
+        p {
+            font-family: Darker Grotesque;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            color: #C9C9C9;
+        }
+    }
+
+    .percentage {
+        font-family: Darker Grotesque;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: #C9C9C9;
+    }
+}

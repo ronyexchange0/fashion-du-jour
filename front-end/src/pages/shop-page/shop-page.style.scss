@@ -1,0 +1,49 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.shop-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (max-width: $screen-md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .products {
+        .custom-button {
+            margin-bottom: 20px;
+            @media (min-width: $screen-md) {
+                display: none;
+            }
+        }
+
+        .heading {
+            margin-bottom: 40px;
+            @media (max-width: $screen-md) {
+                margin-bottom: 20px;
+            }
+            
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                letter-spacing: 0.195em;
+                color: $secondary-color;
+                
+                span {
+                    color: #FF0000;  
+                }
+            }
+        }
+    }
+}

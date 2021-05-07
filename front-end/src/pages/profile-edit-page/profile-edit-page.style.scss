@@ -1,0 +1,51 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.profile-edit-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        background-color: $main-color;
+        padding: 12px 24px;
+        margin-bottom: 40px;
+        color: $white-color;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        width: 50%;
+        @media (max-width: $screen-md) {
+            width: 100%;
+        }
+    }
+
+    .input {
+        margin-bottom: 20px;
+        
+        input {
+            width: 50%;
+            @media (max-width: $screen-md) {
+                width: 100%;
+            }
+        } 
+    }
+
+    button {
+        margin-top: 10px
+    }
+
+}

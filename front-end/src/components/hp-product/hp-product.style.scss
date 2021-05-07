@@ -1,0 +1,103 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.hp-product {
+    padding: 32px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding-top: 62%;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black-color;
+        opacity: .5;
+    }
+
+    .details {
+        height: 100%;
+        position: relative;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .price, .discount {
+            display: inline-block;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: 0.195em;
+            color: $white-color;
+            margin-bottom: 20px;
+            @media (max-width: $screen-md) {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+        }
+
+        .discount {
+            margin-right: 16px;
+            @media (max-width: $screen-md) {
+                margin-right: 8px;
+            }
+        }
+
+        .price.cheaper {
+           opacity: .5;
+           text-decoration: line-through;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+
+            .action {
+                text-align: left;
+                margin-right: 32px;
+                @media (max-width: $screen-md) {
+                    margin-right: 20px;
+                }
+            }
+
+            .size {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                letter-spacing: 0.195em;
+                color: $white-color;
+                @media (max-width: $screen-md) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .wishlist-icon {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        @media (max-width: $screen-md) {
+            img {
+                width: 30px;
+            }
+        }
+    }
+}

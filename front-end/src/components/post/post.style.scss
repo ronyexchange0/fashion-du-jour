@@ -1,0 +1,157 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.post {
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    @media (max-width: $screen-md) {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        position: relative;
+        height: 380px;
+        margin-bottom: 40px;
+        @media (min-width: $screen-lg) and (max-width: $screen-xl) {
+            height: 280px;
+        }
+        @media (max-width: $screen-md) {
+            height: 180px;
+            margin-bottom: 0;
+        }
+        .thumb-column {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 0;
+            left: 10%;
+            @media (min-width: $screen-lg) and (max-width: $screen-xl) {
+                height: 200px;
+                width: 200px;
+            }
+            @media (max-width: $screen-md) {
+                height: 150px;
+                width: 150px;
+            }
+            .thumb {
+                height: 100%;
+                // width: calc(100% + 30px); 
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(270.49deg, rgba(255, 255, 255, .8) 21.93%, rgba(0, 0, 0, 0) 57.82%);;
+                }
+
+                .content {
+                    margin-left: 78%;
+                    width: 78%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    padding-top: 40px;
+                    padding-bottom: 60px;
+                    position: relative;
+                    @media (max-width: $screen-md) {
+                        padding-top: 10px;
+                        padding-bottom: 20px;
+                        width: 90%;
+                    }
+                    @media (max-width: $screen-md) {
+                        margin-left: 72%;
+                    }
+                    @media (min-width: $screen-lg) and (max-width: $screen-xl) {
+                        width: 100%;
+                    }
+
+                    h3 {
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        letter-spacing: 0.27em;
+                        color: $main-color;
+                        @media (max-width: $screen-md) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .date-line {
+                        display: flex;
+                        align-items: center;
+
+                        .line {
+                            height: 2px;
+                            width: 50px;
+                            display: inline-block;
+                            margin-right: 20px;
+                            background-color: $main-color;
+                        }
+
+                        .date {
+                            display: inline-block;
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            letter-spacing: 0.27em;
+                            color: $main-color;
+                            @media (max-width: $screen-md) {
+                                font-size: 10px;
+                            }
+                        }
+
+                    }
+
+                }
+                
+            }
+        }
+    
+        .bg-column {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 20%;
+            left: 0;
+            background-color: $main-opacity-color;
+            @media (min-width: $screen-lg) and (max-width: $screen-xl) {
+                height: 200px;
+                width: 200px;
+            }
+            @media (max-width: $screen-md) {
+                height: 150px;
+                width: 150px;
+                top: 6%;
+                left: 5%;
+            }
+            .bg {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        
+    }
+}

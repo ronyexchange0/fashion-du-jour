@@ -1,0 +1,62 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.checkout-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (max-width: $screen-md) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        margin-bottom: 60px;
+        @media (max-width: $screen-md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .checkout-inner {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $black-color;
+
+        span {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 0.195em;
+            color: $secondary-color;
+        }
+    }
+
+    .pay {
+        padding-top: 40px;
+
+        p {
+            margin-bottom: 20px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: 0.195em;
+            color: $black-color;
+        }
+
+        a {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+
+}

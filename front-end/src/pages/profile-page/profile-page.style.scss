@@ -1,0 +1,54 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.profile-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .option {
+        border: 1px solid $main-color;
+        border-radius: 5px;
+        padding: 32px 16px;
+        width: 50%;
+        margin-bottom: 20px;
+        transition: .3s all ease-in-out;
+        @media (max-width: $screen-md) {
+            width: 100%;
+            padding: 24px 16px;
+        }
+    }
+    
+    a, span {
+        color: $main-color;
+        font-weight: bold;
+        font-size: 40px;
+        @media (max-width: $screen-md) {
+            font-size: 20px;
+        }
+    }
+    
+    .option:hover {
+        background-color: $main-color;
+        color: $white-color;
+        transition: .3s all ease-in-out;
+
+    }
+
+    .option:hover span {
+        color: $white-color;
+        transition: .3s all ease-in-out;
+    }
+
+    .log-out {
+        cursor: pointer;
+    }
+}

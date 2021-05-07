@@ -1,0 +1,72 @@
+$main-color: #333258;
+$secondary-color: #1D1C38;
+$main-opacity-color: rgba(51, 50, 88, 0.5);;
+$gradient: linear-gradient(179.89deg, #393258 0.09%, rgba(51, 50, 88, 0) 136.29%);
+$white-color: #ffffff;
+$black-color: #000000;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+
+.contact-us-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (max-width: $screen-md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 95px;
+        @media (max-width: $screen-md) {
+            margin-bottom: 40px
+        }
+    }
+
+    form {
+        input {
+            width: 100%;
+            margin-bottom: 40px;
+            @media (max-width: $screen-md) {
+                margin-bottom: 20px;
+            }
+        }
+
+        textarea {
+            border: none;
+            background-color: $main-opacity-color;
+            padding: 16px;
+            outline: none;
+            width: 100%;
+            height: 180px;
+
+            &::placeholder {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 0.2em;
+                color: $main-color;
+            }
+        }
+
+        .btn-wrapper {
+            margin-top: 60px;
+            @media (max-width: $screen-md) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .grid-image-wrapper {
+        margin: auto 0;
+
+        @media (max-width: $screen-md) {
+            display: none;
+        }
+    }
+}

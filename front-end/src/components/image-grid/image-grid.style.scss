@@ -1,0 +1,38 @@
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+.image-grid {
+    flex-direction: column;
+
+    .gridImage1 {
+        align-self: flex-end;
+        
+        img {
+            box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .gridImage2 {
+        margin-top: -150px;
+        @media (max-width: $screen-lg) {
+            margin-top: -100px;
+        }
+        
+        img {
+            box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .gridImage3 {
+        margin-left: 30%;
+        margin-top: -60px;
+        @media (max-width: $screen-lg) {
+            margin-top: -50px;
+        }
+        img {
+            box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
